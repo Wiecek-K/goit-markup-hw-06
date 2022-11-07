@@ -637,7 +637,6 @@ body {
 .modal__input:focus {
   border-color: var(--brand-color);
   outline: 0;
-  padding-left: 42px;
 }
 .modal__label:has(.modal__input:focus) .modal__icon {
   fill: var(--brand-color);
