@@ -444,6 +444,7 @@ body {
 }
 .newsletter__button {
   margin: 0;
+  margin-left: 12px;
   display: inline-flex;
   align-items: center;
   height: 50px;
