@@ -461,8 +461,8 @@
             </svg>
           </button>
 
-          <div></div>
-            <form >
+          <div>
+            <form>
               <h3 class="modal__heading">
                 Zostaw swoje dane w formularzu poniżej
               </h3>
@@ -496,9 +496,19 @@
                   class="modal__input modal__input-comment"
                   name="comment"
                   placeholder="Wprowadź tekst"
-                ></textarea>
-              </label>
-              <div class="flex"><button type="submit" class="main-button">Wyślij</button></div>
+                ></textarea></label
+              ><label>
+                <input type="checkbox" name="rodo" class="modal__checkbox" />
+                <span class="modal__terms">
+                  Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+                  <a href="#">Politykę Prywatności.</a>
+                </span></label
+              >
+              <div class="flex">
+                <button type="submit" class="main-button main-button-modal">
+                  Wyślij
+                </button>
+              </div>
             </form>
           </div>
         </div>
