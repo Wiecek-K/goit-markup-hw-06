@@ -392,64 +392,77 @@
       </section>
     </main>
     <footer class="footer-standard">
-      <div class="container">
-        <ul class="list footer-list">
-          <li>
-            <div class="footer-wrapper">
-              <a href="/index.html" class="footer-logo link"
-                ><span class="footer-web">Web</span>Studio</a
+      <div class="container flex flex-footer">
+        <div class="footer-wrapper">
+          <a href="/index.html" class="footer-logo link"
+            ><span class="footer-web">Web</span>Studio
+          </a>
+          <address>
+            <p class="building-address link">
+              Warszawa, Aleje Jerozolimskie 21
+            </p>
+            <p class="contacts">
+              <a href="mailto:info@example.com" class="link"
+                >info@devstudio.com</a
               >
-              <address>
-                <p class="building-address link">
-                  Warszawa, Aleje Jerozolimskie 21
-                </p>
-                <p class="contacts">
-                  <a href="mailto:info@example.com" class="link"
-                    >info@devstudio.com</a
-                  >
-                </p>
-                <p class="contacts">
-                  <a href="tel:+48111111111" class="link">+48 111 111 111</a>
-                </p>
-              </address>
-            </div>
-          </li>
-          <li>
-            <div class="join-to-us">
-              <h5>DOŁĄCZ DO NAS</h5>
-              <ul class="person-panel-socials list">
-                <li>
-                  <div class="footer-socials_border flex">
-                    <svg width="20" height="20">
-                      <use href="./images/icons.svg#icon-instagram-2"></use>
-                    </svg>
-                  </div>
-                </li>
-                <li>
-                  <div class="footer-socials_border flex">
-                    <svg width="20" height="20">
-                      <use href="./images/icons.svg#icon-twitter-1"></use>
-                    </svg>
-                  </div>
-                </li>
-                <li>
-                  <div class="footer-socials_border flex">
-                    <svg width="20" height="20">
-                      <use href="./images/icons.svg#icon-facebook-1"></use>
-                    </svg>
-                  </div>
-                </li>
-                <li>
-                  <div class="footer-socials_border flex">
-                    <svg width="20" height="20">
-                      <use href="./images/icons.svg#icon-linkedin-1 "></use>
-                    </svg>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+            </p>
+            <p class="contacts">
+              <a href="tel:+48111111111" class="link">+48 111 111 111</a>
+            </p>
+          </address>
+        </div>
+
+        <div class="join-to-us">
+          <h5>DOŁĄCZ DO NAS</h5>
+          <ul class="person-panel-socials list">
+            <li>
+              <div class="footer-socials_border flex">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="footer-socials_border flex">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="footer-socials_border flex">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="footer-socials_border flex">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin-1 "></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="newsletter">
+          <label
+            ><h5 class="newsletter__heading">Zapisz się do newslettera</h5>
+            <input
+              type="email"
+              class="newsletter__input"
+              name="email"
+              id="newsletter"
+              placeholder="E-mail"
+          /></label>
+          <button type="submit" class="main-button newsletter__button">
+            Zapisz się
+            <svg width="24" height="24" class="newsletter__icon">
+              <use href="./images/icons.svg#icon-newsletter"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <div class="is-hidden" data-modal>
@@ -468,26 +481,36 @@
               </h3>
 
               <label class="modal__label">
-                <svg width="12" height="12" class="modal__formicon">
+                <svg width="12" height="12" class="modal__icon">
                   <use href="./images/icons.svg#icon-form-man"></use>
                 </svg>
                 Imie
-                <input type="text" class="modal__input" name="usrname" />
+                <input
+                  type="text"
+                  class="modal__input"
+                  name="usrname"
+                  id="usrname"
+                />
               </label>
 
               <label class="modal__label">
-                <svg width="13" height="13" class="modal__formicon">
+                <svg width="13" height="13" class="modal__icon">
                   <use href="./images/icons.svg#icon-form-phone"></use>
                 </svg>
                 Telefon
-                <input type="tel" class="modal__input" name="tel"
+                <input type="tel" class="modal__input" name="tel" id="tel"
               /></label>
               <label class="modal__label">
-                <svg width="15" height="12" class="modal__formicon">
+                <svg width="15" height="12" class="modal__icon">
                   <use href="./images/icons.svg#icon-form-copert"></use>
                 </svg>
                 Email
-                <input type="email" class="modal__input" name="email" />
+                <input
+                  type="email"
+                  class="modal__input"
+                  name="email"
+                  id="email"
+                />
               </label>
               <label class="modal__label">
                 Komentarz
@@ -496,14 +519,17 @@
                   class="modal__input modal__input-comment"
                   name="comment"
                   placeholder="Wprowadź tekst"
-                ></textarea></label
-              ><label>
+                >
+                </textarea>
+              </label>
+              <label>
                 <input type="checkbox" name="rodo" class="modal__checkbox" />
                 <span class="modal__terms">
                   Oświadczam iż akceptuję <a href="#">Regulamin</a> i
                   <a href="#">Politykę Prywatności.</a>
-                </span></label
-              >
+                </span>
+              </label>
+
               <div class="flex">
                 <button type="submit" class="main-button main-button-modal">
                   Wyślij
