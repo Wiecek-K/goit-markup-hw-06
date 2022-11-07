@@ -360,7 +360,6 @@ body {
   color: var(--contrast-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 15px;
 }
 .flex-footer {
   justify-content: flex-start;
@@ -667,10 +666,7 @@ body {
   display: block;
 }
 .modal__checkbox {
-  width: 15px;
-  height: 15px;
-  position: relative;
-  top: 3px;
+  visibility: hidden;
 }
 .modal__checkbox:checked {
   outline: 0;
@@ -682,8 +678,22 @@ body {
   font-size: 14px;
   line-height: 146%;
   letter-spacing: 0.03em;
+  position: relative;
 }
 .modal__terms a {
   color: var(--brand-color);
-  text-decoration: dotted;
+}
+.modal__terms svg {
+  fill: #ffffff;
+  background: #ffffff;
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+  position: relative;
+  top: 2px;
+  transition: border 0.05s, fill 0.05s, background-color 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+}
+.modal__checkbox:checked + span svg {
+  background-color: var(--brand-color);
+  border: 0;
 }
