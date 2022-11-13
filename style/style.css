@@ -696,3 +696,8 @@ body {
   background-color: var(--brand-color);
   border: 0;
 }
+.modal__label:has(.modal__input:invalid) .modal__input,
+.modal__label:has(.modal__input:invalid) .modal__icon {
+  fill: red;
+  border-color: red;
+}
