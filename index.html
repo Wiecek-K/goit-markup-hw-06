@@ -466,7 +466,7 @@
       </div>
     </footer>
     <div class="is-hidden" data-modal>
-      <div class="backdrop">
+      <div class="backdrop flex">
         <div class="modal">
           <div>
             <form>
@@ -488,6 +488,7 @@
                   minlength="4"
                   class="modal__input"
                   name="usrname"
+                  autocomplete="given-name"
                   id="usrname"
                 />
               </label>
@@ -503,6 +504,7 @@
                   name="tel"
                   id="tel"
                   pattern="[0-9]{9}"
+                  autocomplete="tel"
               /></label>
               <label class="modal__label">
                 <svg width="15" height="12" class="modal__icon">
@@ -514,6 +516,7 @@
                   class="modal__input"
                   name="email"
                   id="email"
+                  autocomplete="email"
                 />
               </label>
               <label class="modal__label">
